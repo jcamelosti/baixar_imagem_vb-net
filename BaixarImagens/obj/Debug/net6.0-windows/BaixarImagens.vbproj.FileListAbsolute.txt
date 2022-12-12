@@ -1,0 +1,17 @@
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.vbproj.AssemblyReference.cache
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.Form1.resources
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.vbproj.GenerateResource.cache
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.AssemblyInfoInputs.cache
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.AssemblyInfo.vb
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.vbproj.CoreCompileInputs.cache
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\bin\Debug\net6.0-windows\BaixarImagens.exe
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\bin\Debug\net6.0-windows\BaixarImagens.deps.json
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\bin\Debug\net6.0-windows\BaixarImagens.runtimeconfig.json
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\bin\Debug\net6.0-windows\BaixarImagens.dll
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\bin\Debug\net6.0-windows\BaixarImagens.pdb
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.dll
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\refint\BaixarImagens.dll
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.pdb
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\BaixarImagens.genruntimeconfig.cache
+C:\Users\josue\source\repos\BaixarImagens\BaixarImagens\obj\Debug\net6.0-windows\ref\BaixarImagens.dll
