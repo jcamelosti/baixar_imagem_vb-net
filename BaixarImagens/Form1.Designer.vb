@@ -23,30 +23,100 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(266, 178)
+        Me.Button1.Location = New System.Drawing.Point(309, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(274, 110)
+        Me.Button1.Size = New System.Drawing.Size(154, 51)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Baixar Imagens"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(12, 77)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(787, 111)
+        Me.RichTextBox1.TabIndex = 1
+        Me.RichTextBox1.Text = ""
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(337, 282)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(105, 40)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "Dividir CSV"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(412, 227)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.Text = "2000"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(207, 230)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(202, 15)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Número de Linhas em Cada Arquivo:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(346, 256)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 15)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Separador:"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(412, 253)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox2.TabIndex = 6
+        Me.TextBox2.Text = ";"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(811, 501)
+        Me.ClientSize = New System.Drawing.Size(807, 362)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button1)
         Me.KeyPreview = True
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
 End Class
