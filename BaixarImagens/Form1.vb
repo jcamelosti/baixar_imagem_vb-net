@@ -33,7 +33,7 @@ Public Class Form1
         Dim marca As Object
         Dim linkImagem As Object
 
-        Using MyReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(path)
+        Using MyReader As New FileIO.TextFieldParser(path)
 
             MyReader.TextFieldType = FileIO.FieldType.Delimited
             MyReader.Delimiters = New String() {";"}
@@ -46,21 +46,23 @@ Public Class Form1
                     'currentRow = MyReader.ReadFields()
                     Dim fields = MyReader.ReadFields()
 
-                    numNota = fields(1).Replace("/", "-")
-                    marca = CarRemove(fields(3), "\/:*?'<>|@")
-                    linkImagem = fields(14)
+                    numNota = fields(0).Replace("/", "-")
+                    marca = CarRemove(fields(1), "\/:*?'<>|@")
+                    linkImagem = fields(2)
 
                     If Trim(numNota) <> "" And Trim(marca) <> "" And Trim(linkImagem) <> "" Then
                         DownloadImagem(linkImagem, marca, numNota, localSalvar)
                     End If
-                Catch ex As Microsoft.VisualBasic.FileIO.MalformedLineException
+                Catch ex As FileIO.MalformedLineException
                     MsgBox("Line " & ex.Message &
                 " is invalid.  Skipping")
                 End Try
             End While
         End Using
 
-        RichTextBox1.AppendText("Concluído")
+        RichTextBox1.AppendText("Processamento do Arquivo " + path + "CONCLUÍDA COM SUCESSO")
+        System.IO.File.Delete(path)
+        Button1.Enabled = True
     End Sub
 
     Private Sub QuebrarCSV(ByVal path As String, ByVal localSalvar As String)
@@ -124,7 +126,8 @@ Public Class Form1
             End While
         End Using
 
-        RichTextBox1.AppendText("Concluído")
+        RichTextBox1.AppendText("Geração de Arquivos .Csv Menores Concluído com Sucesso.")
+        Button2.Enabled = True
     End Sub
 
     Private Sub DownloadImagem(ByVal url As String, ByVal nomePasta As String, ByVal notaNome As String, ByVal localSalvar As String)
@@ -160,6 +163,7 @@ Public Class Form1
             fb.ShowNewFolderButton = True
 
             If fb.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Button1.Enabled = False
                 ParseCSV(strFileName, fb.SelectedPath)
             End If
         End If
@@ -184,6 +188,7 @@ Public Class Form1
             fb.ShowNewFolderButton = True
 
             If fb.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Button2.Enabled = False
                 QuebrarCSV(strFileName, fb.SelectedPath)
             End If
         End If
